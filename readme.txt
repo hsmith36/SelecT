@@ -9,7 +9,7 @@ Created by RidgeLab Group, BYU Bioinformatics
 Readme file for understanding input for all phases of SelecT pipeline
 Primary instructions are created for use on a supercomputer. Modifications for individual setup my be necessary.
 
-_______________________________________________________________________________________________
+________________________________________________________________________________________
 PHASE 1
 
 Requred Arguments:
@@ -48,7 +48,7 @@ java -Xmx3000m -jar EnviSetup.jar clean_data/data clean_data/map 21 21 CEU YRI -
 
 
 
-_______________________________________________________________________________________________
+________________________________________________________________________________________
 PHASE 2
 
 Possible BASH script for supercomputer running SLURM
@@ -60,7 +60,7 @@ done
 
 
 
-_______________________________________________________________________________________________
+________________________________________________________________________________________
 PHASE 3
 
 Required Arguments:
@@ -95,7 +95,7 @@ java -jar StatsCalc.jar clean_data/SelecT_workspace clean_data/sim 21 2
 
 
 
-_______________________________________________________________________________________________
+________________________________________________________________________________________
 PHASE 4
 
 Required Arguments:
@@ -119,6 +119,8 @@ Optional Arguments:
 
 -rn		Normalization	Runs normalization step across the entire dataset/chromosome
 				Normalizes by standardization (mean 0; standard deviation 1)
+
+-ui		Use Incomplete	Use incomplete data when analyzing MoP scores
 
 -im		Ignore MoP	Ignores all MoP scores and finds significance based upon PoP only
 
